@@ -1,0 +1,30 @@
+.git
+.idea
+node_modules/
+nbproject/
+.vs*/
+*.code-workspace
+Thumbs.db
+gulpfile.js
+
+test/
+travis/
+.travis.yml
+appveyor.yml
+.travis.yaml
+appveyor.yaml
+
+.github/
+.gitignore
+.npmignore
+.eslintrc.json
+.eslintignore
+
+# npm package files
+iobroker.*.tgz
+package-lock.json
+
+# developer files
+.eslintrc.json
+tsconfig.json
+tsconfig.*.json
