@@ -56,14 +56,14 @@ After installation, the adapter will create device objects for each of your AC I
 
 ## Changelog
 
-### 0.2.9 (2023-XX-XX)
+### 0.3.1 (2025-03-27)
 * Initial release
 
 ## License
 
 MIT License
 
-Copyright (c) 2025 raspilaurent raspi@laurent-vite.de
+Copyright (c) 2025 raspilaurent
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
