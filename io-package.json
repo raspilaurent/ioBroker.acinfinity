@@ -39,6 +39,18 @@
         "connectionType": "cloud",
         "dataSource": "poll",
         "materialize": true,
+        "messagebox": {
+            "enabled": true,
+            "type": "warning",
+            "title": {
+                "en": "Warning: Use at your own risk",
+                "de": "Warnung: Benutzung auf eigene Gefahr"
+            },
+            "message": {
+                "en": "This adapter is in an early development stage. By continuing the installation, you acknowledge that you use this adapter at your own risk. The author assumes no liability for any damage.",
+                "de": "Dieser Adapter befindet sich in einem frühen Entwicklungsstadium. Mit der Installation bestätigen Sie, dass Sie diesen Adapter auf eigene Gefahr verwenden. Der Autor übernimmt keine Haftung für eventuelle Schäden."
+            }
+        },
         "dependencies": [
             {
                 "js-controller": ">=2.0.0"
