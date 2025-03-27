@@ -8,10 +8,10 @@
                 "de": "Erste Version"
             }
         },
-        "title": "AC Infinity",
+        "title": "AC Infinity (BETA-VERSION - USE AT YOUR OWN RISK)",
         "titleLang": {
-            "en": "AC Infinity",
-            "de": "AC Infinity"
+            "en": "AC Infinity (BETA-VERSION - USE AT YOUR OWN RISK)",
+            "de": "AC Infinity (BETA-VERSION - NUTZUNG AUF EIGENE GEFAHR)"
         },
         "desc": {
             "en": "Adapter for controlling AC Infinity smart devices",
@@ -39,17 +39,9 @@
         "connectionType": "cloud",
         "dataSource": "poll",
         "materialize": true,
-        "messagebox": {
-            "enabled": true,
-            "type": "warning",
-            "title": {
-                "en": "Warning: Use at your own risk",
-                "de": "Warnung: Benutzung auf eigene Gefahr"
-            },
-            "message": {
-                "en": "This adapter is in an early development stage. By continuing the installation, you acknowledge that you use this adapter at your own risk. The author assumes no liability for any damage.",
-                "de": "Dieser Adapter befindet sich in einem frühen Entwicklungsstadium. Mit der Installation bestätigen Sie, dass Sie diesen Adapter auf eigene Gefahr verwenden. Der Autor übernimmt keine Haftung für eventuelle Schäden."
-            }
+        "noConfig": false,
+        "adminUI": {
+            "config": "json"
         },
         "dependencies": [
             {

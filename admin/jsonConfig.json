@@ -1,0 +1,52 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "warning": {
+            "type": "panel",
+            "items": {
+                "warningTitle": {
+                    "type": "staticText",
+                    "text": "WARNING / WARNUNG",
+                    "style": {
+                        "color": "red",
+                        "fontSize": "18px",
+                        "fontWeight": "bold",
+                        "textAlign": "center"
+                    }
+                },
+                "warningText": {
+                    "type": "staticText",
+                    "text": "This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.<br><br>Dieser Adapter befindet sich in einem frühen Entwicklungsstadium. Sie verwenden diesen Adapter auf eigene Gefahr. Der Autor übernimmt keine Haftung für eventuelle Schäden.",
+                    "style": {
+                        "color": "red",
+                        "fontWeight": "bold",
+                        "textAlign": "center",
+                        "marginBottom": "20px"
+                    }
+                }
+            }
+        },
+        "settings": {
+            "type": "panel",
+            "items": {
+                "email": {
+                    "type": "text",
+                    "label": "AC Infinity E-Mail",
+                    "newLine": true
+                },
+                "password": {
+                    "type": "password",
+                    "label": "AC Infinity Password / Passwort",
+                    "newLine": true
+                },
+                "pollingInterval": {
+                    "type": "number",
+                    "label": "Polling Interval / Abfrageintervall (seconds)",
+                    "min": 5,
+                    "default": 30
+                }
+            }
+        }
+    }
+}
