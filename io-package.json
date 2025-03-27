@@ -18,20 +18,20 @@
             "de": "Adapter für die Steuerung von AC Infinity Smart-Geräten"
         },
         "authors": [
-            "Your Name <your.email@example.com>"
+            "laurent Standard raspi@laurent-vite.de"
         ],
         "keywords": [
             "ac infinity",
             "climate control",
-            "smart devices"
+            "Controller 69pro+"
         ],
         "license": "MIT",
         "platform": "Javascript/Node.js",
         "main": "main.js",
         "icon": "acinfinity.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/yourusername/iobroker.acinfinity/master/admin/acinfinity.png",
-        "readme": "https://github.com/yourusername/iobroker.acinfinity/blob/master/README.md",
+        "extIcon": "https://raw.githubusercontent.com/raspilaurent/iobroker.acinfinity/master/admin/acinfinity.png",
+        "readme": "https://github.com/raspilaurent/iobroker.acinfinity/blob/master/README.md",
         "loglevel": "info",
         "mode": "daemon",
         "type": "climate-control",
