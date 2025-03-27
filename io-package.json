@@ -8,14 +8,14 @@
                 "de": "Erste Version"
             }
         },
-        "title": "AC Infinity (BETA-VERSION - USE AT YOUR OWN RISK)",
+        "title": "AC Infinity",
         "titleLang": {
-            "en": "AC Infinity (BETA-VERSION - USE AT YOUR OWN RISK)",
-            "de": "AC Infinity (BETA-VERSION - NUTZUNG AUF EIGENE GEFAHR)"
+            "en": "AC Infinity",
+            "de": "AC Infinity"
         },
         "desc": {
-            "en": "Adapter for controlling AC Infinity smart devices",
-            "de": "Adapter für die Steuerung von AC Infinity Smart-Geräten"
+            "en": "Adapter for controlling AC Infinity smart devices (BETA - use at your own risk)",
+            "de": "Adapter für die Steuerung von AC Infinity Smart-Geräten (BETA - Nutzung auf eigene Gefahr)"
         },
         "authors": [
             "laurent Standard raspi@laurent-vite.de"
@@ -39,10 +39,6 @@
         "connectionType": "cloud",
         "dataSource": "poll",
         "materialize": true,
-        "noConfig": false,
-        "adminUI": {
-            "config": "json"
-        },
         "dependencies": [
             {
                 "js-controller": ">=2.0.0"
@@ -90,6 +86,19 @@
                 "type": "string",
                 "read": true,
                 "write": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.warningAcknowledged",
+            "type": "state",
+            "common": {
+                "role": "indicator",
+                "name": "Warning message has been shown",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
             },
             "native": {}
         }

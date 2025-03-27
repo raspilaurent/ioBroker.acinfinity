@@ -40,6 +40,42 @@ class ACInfinity extends utils.Adapter {
         // Initialize adapter
         this.log.info("Starting AC Infinity adapter");
 
+        // Check if the warning has been acknowledged
+        const warningState = await this.getStateAsync("info.warningAcknowledged");
+        
+        if (!warningState || warningState.val !== true) {
+            this.log.warn("BETA VERSION: This adapter is in beta. Use at your own risk!");
+            
+            // Show warning message to user
+            this.sendToAsync("system.adapter.admin.0", "popup", {
+                title: {
+                    en: "⚠️ WARNING: BETA VERSION ⚠️",
+                    de: "⚠️ WARNUNG: BETA VERSION ⚠️"
+                },
+                text: {
+                    en: "This adapter is in an early development stage. By continuing to use it, you acknowledge that you use this adapter at your own risk. The author assumes no liability for any damage.",
+                    de: "Dieser Adapter befindet sich in einem frühen Entwicklungsstadium. Mit der weiteren Nutzung bestätigen Sie, dass Sie diesen Adapter auf eigene Gefahr verwenden. Der Autor übernimmt keine Haftung für eventuelle Schäden."
+                },
+                type: "warning",
+                timeout: 30,
+                modal: true,
+                buttons: [
+                    {
+                        text: {
+                            en: "I understand, continue",
+                            de: "Ich verstehe, fortfahren"
+                        },
+                        id: "accept",
+                        class: "primary",
+                        results: ["accept"]
+                    }
+                ]
+            }, result => {
+                // Set the warning as acknowledged regardless of result
+                this.setState("info.warningAcknowledged", { val: true, ack: true });
+            });
+        }
+
         // Get adapter configuration
         const email = this.config.email;
         const password = this.config.password;
