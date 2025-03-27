@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Load ioBroker scripts and styles-->
+    <link rel="stylesheet" type="text/css" href="../../css/adapter.css" />
+    <link rel="stylesheet" type="text/css" href="../../lib/css/materialize.css">
+
+    <script type="text/javascript" src="../../lib/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="../../js/translate.js"></script>
+    <script type="text/javascript" src="../../lib/js/materialize.js"></script>
+    <script type="text/javascript" src="../../js/adapter-settings.js"></script>
+
+    <!-- Load our own files -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="words.js"></script>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .adapter-container {
+            background-color: white;
+            border-radius: 2px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+            margin: 20px;
+            padding: 20px;
+            max-width: 600px;
+        }
+        .logo {
+            max-height: 48px;
+            margin-bottom: 15px;
+        }
+        .input-field {
+            margin-bottom: 20px;
+        }
+        .input-field label {
+            color: rgba(0,0,0,0.62);
+        }
+        .input-field input:focus {
+            border-bottom: 1px solid #2196F3;
+            box-shadow: 0 1px 0 0 #2196F3;
+        }
+        .input-field .helper-text {
+            color: rgba(0,0,0,0.54);
+            font-size: 12px;
+        }
+        .warning-text {
+            color: #FF9800;
+        }
+        h4 {
+            color: rgba(0,0,0,0.87);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #2196F3;
+        }
+        .btn:hover {
+            background-color: #1976D2;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function load(settings, onChange) {
+            if (!settings) return;
+            $('.value').each(function () {
+                var $key = $(this);
+                var id = $key.attr('id');
+                if ($key.attr('type') === 'checkbox') {
+                    $key.prop('checked', settings[id])
+                        .on('change', () => onChange());
+                } else {
+                    $key.val(settings[id])
+                        .on('change', () => onChange())
+                        .on('keyup', () => onChange());
+                }
+            });
+            onChange(false);
+            if (M) M.updateTextFields();
+
+            $('#password').on('focus', function() {
+                $('#password-hint').show();
+            }).on('blur', function() {
+                $('#password-hint').hide();
+            });
+
+            $('#pollingInterval').on('change keyup', function() {
+                var value = parseInt($(this).val());
+                if (value < 10) {
+                    $('#pollingIntervalWarning').show();
+                    $(this).addClass('invalid');
+                } else {
+                    $('#pollingIntervalWarning').hide();
+                    $(this).removeClass('invalid');
+                }
+            });
+        }
+
+        function save(callback) {
+            var obj = {};
+            $('.value').each(function () {
+                var $this = $(this);
+                if ($this.attr('type') === 'checkbox') {
+                    obj[$this.attr('id')] = $this.prop('checked');
+                } else if ($this.attr('type') === 'number') {
+                    obj[$this.attr('id')] = parseFloat($this.val());
+                } else {
+                    obj[$this.attr('id')] = $this.val();
+                }
+            });
+
+            if (obj.pollingInterval < 10) {
+                obj.pollingInterval = 10;
+            }
+
+            callback(obj);
+        }
+    </script>
+</head>
+<body>
+    <div class="m adapter-container">
+        <div class="row">
+            <div class="col s12">
+                <img src="acinfinity.png" class="logo" alt="AC Infinity Logo">
+                
+                <h4 class="translate">AC Infinity Adapter Settings</h4>
+                
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input class="value" id="email" type="text">
+                        <label for="email" class="translate">AC Infinity E-Mail</label>
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        <input class="value" id="password" type="password">
+                        <label for="password" class="translate">AC Infinity Passwort</label>
+                        <span id="password-hint" class="helper-text warning-text translate" style="display:none;">Note: AC Infinity truncates passwords to 25 characters.</span>
+                    </div>
+                    
+                    <div class="input-field col s12">
+                        <input class="value" id="pollingInterval" type="number" min="10">
+                        <label for="pollingInterval" class="translate">Abfrageintervall (Sekunden)</label>
+                        <span id="pollingIntervalWarning" class="helper-text warning-text translate" style="display:none;">Minimum polling interval is 10 seconds.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

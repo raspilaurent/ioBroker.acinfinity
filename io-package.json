@@ -1,0 +1,93 @@
+{
+    "common": {
+        "name": "acinfinity",
+        "version": "0.3.1",
+        "news": {
+            "0.3.1": {
+                "en": "Initial version",
+                "de": "Erste Version"
+            }
+        },
+        "title": "AC Infinity",
+        "titleLang": {
+            "en": "AC Infinity",
+            "de": "AC Infinity"
+        },
+        "desc": {
+            "en": "Adapter for controlling AC Infinity smart devices",
+            "de": "Adapter für die Steuerung von AC Infinity Smart-Geräten"
+        },
+        "authors": [
+            "Your Name <your.email@example.com>"
+        ],
+        "keywords": [
+            "ac infinity",
+            "climate control",
+            "smart devices"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "acinfinity.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/yourusername/iobroker.acinfinity/master/admin/acinfinity.png",
+        "readme": "https://github.com/yourusername/iobroker.acinfinity/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "climate-control",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ],
+        "installedFrom": "github",
+        "restartAdapters": [
+            "acinfinity"
+        ]
+    },
+    "native": {
+        "email": "",
+        "password": "",
+        "pollingInterval": 30
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.token",
+            "type": "state",
+            "common": {
+                "role": "text",
+                "name": "Login token",
+                "type": "string",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        }
+    ]
+}
