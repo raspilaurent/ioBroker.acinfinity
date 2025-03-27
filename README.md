@@ -12,6 +12,8 @@
 
 This adapter allows you to control your AC Infinity devices via ioBroker.
 
+## ALL CREDITS TO: https://github.com/dalinicus/homeassistant-acinfinity
+
 ## Features
 
 * Control AC Infinity fans, timers, and other connected devices
