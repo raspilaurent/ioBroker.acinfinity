@@ -1,0 +1,12 @@
+{
+    "AC Infinity Adapter Settings": "Ustawienia adaptera AC Infinity",
+    "AC Infinity Email": "Email AC Infinity",
+    "Email address used for AC Infinity login": "Adres e-mail używany do logowania AC Infinity",
+    "AC Infinity Password": "Hasło AC Infinity",
+    "Password used for AC Infinity login": "Hasło używane do logowania AC Infinity",
+    "Polling Interval (seconds)": "Interwał odpytywania (sekundy)",
+    "Minimum polling interval is 5 seconds.": "Minimalny interwał odpytywania wynosi 5 sekund.",
+    "Note: AC Infinity truncates passwords to 25 characters.": "Uwaga: AC Infinity skraca hasła do 25 znaków.",
+    "WARNING": "OSTRZEŻENIE",
+    "This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.": "Ten adapter jest we wczesnej fazie rozwoju. Korzystasz z tego adaptera na własne ryzyko. Autor nie ponosi odpowiedzialności za jakiekolwiek szkody."
+}

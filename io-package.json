@@ -1,25 +1,60 @@
 {
     "common": {
         "name": "acinfinity",
-        "version": "0.4.1",
+        "version": "0.4.2",
         "news": {
-            "0.4.1": {
+            "0.4.2": {
                 "en": "Bug fixes and improvements",
-                "de": "Fehlerbehebungen und Verbesserungen"
+                "de": "Fehlerbehebungen und Verbesserungen",
+                "ru": "Исправления ошибок и улучшения",
+                "pt": "Correções de bugs e melhorias",
+                "nl": "Bugfixes en verbeteringen",
+                "fr": "Corrections de bugs et améliorations",
+                "it": "Correzioni di bug e miglioramenti",
+                "es": "Correcciones de errores y mejoras",
+                "pl": "Poprawki błędów i ulepszenia",
+                "uk": "Виправлення помилок та вдосконалення",
+                "zh-cn": "错误修复和改进"
             },
             "0.3.1": {
                 "en": "Initial version",
-                "de": "Erste Version"
+                "de": "Erste Version",
+                "ru": "Начальная версия",
+                "pt": "Versão inicial",
+                "nl": "Eerste versie",
+                "fr": "Version initiale",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Wersja początkowa",
+                "uk": "Початкова версія",
+                "zh-cn": "初始版本"
             }
         },
-        "title": "AC Infinity (BETA-VERSION - USE AT YOUR OWN RISK)",
         "titleLang": {
             "en": "AC Infinity (BETA-VERSION - USE AT YOUR OWN RISK)",
-            "de": "AC Infinity (BETA-VERSION - NUTZUNG AUF EIGENE GEFAHR)"
+            "de": "AC Infinity (BETA-VERSION - NUTZUNG AUF EIGENE GEFAHR)",
+            "ru": "AC Infinity (БЕТА-ВЕРСИЯ - ИСПОЛЬЗУЙТЕ НА СВОЙ СТРАХ И РИСК)",
+            "pt": "AC Infinity (VERSÃO BETA - USE POR SUA CONTA E RISCO)",
+            "nl": "AC Infinity (BÈTA-VERSIE - GEBRUIK OP EIGEN RISICO)",
+            "fr": "AC Infinity (VERSION BÊTA - UTILISATION À VOS RISQUES ET PÉRILS)",
+            "it": "AC Infinity (VERSIONE BETA - USARE A PROPRIO RISCHIO)",
+            "es": "AC Infinity (VERSIÓN BETA - ÚSELO BAJO SU PROPIO RIESGO)",
+            "pl": "AC Infinity (WERSJA BETA - KORZYSTAJ NA WŁASNE RYZYKO)",
+            "uk": "AC Infinity (БЕТА-ВЕРСІЯ - ВИКОРИСТОВУЙТЕ НА ВЛАСНИЙ РИЗИК)",
+            "zh-cn": "AC Infinity (测试版 - 使用风险自负)"
         },
         "desc": {
             "en": "Adapter for controlling AC Infinity smart devices",
-            "de": "Adapter für die Steuerung von AC Infinity Smart-Geräten"
+            "de": "Adapter für die Steuerung von AC Infinity Smart-Geräten",
+            "ru": "Адаптер для управления умными устройствами AC Infinity",
+            "pt": "Adaptador para controlar dispositivos inteligentes AC Infinity",
+            "nl": "Adapter voor het bedienen van AC Infinity slimme apparaten",
+            "fr": "Adaptateur pour contrôler les appareils intelligents AC Infinity",
+            "it": "Adattatore per il controllo dei dispositivi intelligenti AC Infinity",
+            "es": "Adaptador para controlar dispositivos inteligentes AC Infinity",
+            "pl": "Adapter do sterowania inteligentnymi urządzeniami AC Infinity",
+            "uk": "Адаптер для керування розумними пристроями AC Infinity",
+            "zh-cn": "用于控制 AC Infinity 智能设备的适配器"
         },
         "authors": [
             "laurent Standard raspi@laurent-vite.de"
@@ -27,11 +62,13 @@
         "keywords": [
             "ac infinity",
             "climate control",
-            "Controller 69pro+"
+            "Controller 69pro+",
+            "ioBroker"
         ],
-        "license": "MIT",
+        "licenseInformation": {
+            "type": "MIT"
+        },
         "platform": "Javascript/Node.js",
-        "main": "main.js",
         "icon": "acinfinity.png",
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/raspilaurent/ioBroker.acinfinity/master/admin/acinfinity.png",
@@ -39,23 +76,29 @@
         "loglevel": "info",
         "mode": "daemon",
         "type": "climate-control",
+        "tier": 2,
         "compact": true,
         "connectionType": "cloud",
         "dataSource": "poll",
-        "materialize": true,
-        "noConfig": false,
         "adminUI": {
             "config": "json"
         },
         "dependencies": [
             {
                 "js-controller": ">=5.0.19"
-            },
+            }
+        ],
+        "globalDependencies": [
             {
                 "admin": ">=6.17.14"
             }
         ],
-        "globalDependencies": []
+        "protectedNative": [
+            "password"
+        ],
+        "encryptedNative": [
+            "password"
+        ]
     },
     "native": {
         "email": "",

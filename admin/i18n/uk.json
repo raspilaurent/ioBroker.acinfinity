@@ -1,0 +1,12 @@
+{
+    "AC Infinity Adapter Settings": "Налаштування адаптера AC Infinity",
+    "AC Infinity Email": "Електронна пошта AC Infinity",
+    "Email address used for AC Infinity login": "Електронна адреса для входу в AC Infinity",
+    "AC Infinity Password": "Пароль AC Infinity",
+    "Password used for AC Infinity login": "Пароль для входу в AC Infinity",
+    "Polling Interval (seconds)": "Інтервал опитування (секунди)",
+    "Minimum polling interval is 5 seconds.": "Мінімальний інтервал опитування становить 5 секунд.",
+    "Note: AC Infinity truncates passwords to 25 characters.": "Примітка: AC Infinity скорочує паролі до 25 символів.",
+    "WARNING": "ПОПЕРЕДЖЕННЯ",
+    "This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.": "Цей адаптер знаходиться на ранній стадії розробки. Ви використовуєте цей адаптер на власний ризик. Автор не несе відповідальності за будь-які збитки."
+}

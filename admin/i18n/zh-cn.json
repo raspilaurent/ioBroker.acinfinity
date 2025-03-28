@@ -1,0 +1,12 @@
+{
+    "AC Infinity Adapter Settings": "AC Infinity 适配器设置",
+    "AC Infinity Email": "AC Infinity 电子邮箱",
+    "Email address used for AC Infinity login": "用于 AC Infinity 登录的电子邮件地址",
+    "AC Infinity Password": "AC Infinity 密码",
+    "Password used for AC Infinity login": "用于 AC Infinity 登录的密码",
+    "Polling Interval (seconds)": "轮询间隔（秒）",
+    "Minimum polling interval is 5 seconds.": "最小轮询间隔为 5 秒。",
+    "Note: AC Infinity truncates passwords to 25 characters.": "注意：AC Infinity 将密码截断为 25 个字符。",
+    "WARNING": "警告",
+    "This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.": "此适配器处于早期开发阶段。使用此适配器的风险由您自行承担。作者不承担任何损害赔偿责任。"
+}
