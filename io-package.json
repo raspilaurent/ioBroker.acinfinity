@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "acinfinity",
-        "version": "0.3.1",
+        "version": "0.4.1",
         "news": {
+            "0.4.1": {
+                "en": "Bug fixes and improvements",
+                "de": "Fehlerbehebungen und Verbesserungen"
+            },
             "0.3.1": {
                 "en": "Initial version",
                 "de": "Erste Version"
@@ -30,8 +34,8 @@
         "main": "main.js",
         "icon": "acinfinity.png",
         "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/raspilaurent/iobroker.acinfinity/master/admin/acinfinity.png",
-        "readme": "https://github.com/raspilaurent/iobroker.acinfinity/blob/master/README.md",
+        "extIcon": "https://raw.githubusercontent.com/raspilaurent/ioBroker.acinfinity/master/admin/acinfinity.png",
+        "readme": "https://github.com/raspilaurent/ioBroker.acinfinity/blob/master/README.md",
         "loglevel": "info",
         "mode": "daemon",
         "type": "climate-control",
@@ -45,13 +49,13 @@
         },
         "dependencies": [
             {
-                "js-controller": ">=2.0.0"
+                "js-controller": ">=5.0.19"
+            },
+            {
+                "admin": ">=6.17.14"
             }
         ],
-        "installedFrom": "github",
-        "restartAdapters": [
-            "acinfinity"
-        ]
+        "globalDependencies": []
     },
     "native": {
         "email": "",

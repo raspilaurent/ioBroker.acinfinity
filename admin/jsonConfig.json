@@ -13,7 +13,12 @@
                         "fontSize": "18px",
                         "fontWeight": "bold",
                         "textAlign": "center"
-                    }
+                    },
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12,
+                    "xs": 12
                 },
                 "warningText": {
                     "type": "staticText",
@@ -23,7 +28,12 @@
                         "fontWeight": "bold",
                         "textAlign": "center",
                         "marginBottom": "20px"
-                    }
+                    },
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12,
+                    "xs": 12
                 }
             }
         },
@@ -33,18 +43,33 @@
                 "email": {
                     "type": "text",
                     "label": "AC Infinity E-Mail",
-                    "newLine": true
+                    "newLine": true,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12,
+                    "xs": 12
                 },
                 "password": {
                     "type": "password",
                     "label": "AC Infinity Password / Passwort",
-                    "newLine": true
+                    "newLine": true,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "xl": 12,
+                    "xs": 12
                 },
                 "pollingInterval": {
                     "type": "number",
                     "label": "Polling Interval / Abfrageintervall (seconds)",
                     "min": 5,
-                    "default": 30
+                    "default": 30,
+                    "sm": 12,
+                    "md": 6,
+                    "lg": 4,
+                    "xl": 3,
+                    "xs": 12
                 }
             }
         }

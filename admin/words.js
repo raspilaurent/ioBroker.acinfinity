@@ -33,5 +33,22 @@ systemDictionary = {
     'Note: AC Infinity truncates passwords to 25 characters.': {
         'en': 'Note: AC Infinity truncates passwords to 25 characters.',
         'de': 'Hinweis: AC Infinity kürzt Passwörter auf 25 Zeichen.'
+    },
+    // Zusätzliche Begriffe, die möglicherweise im Interface verwendet werden
+    'WARNING / WARNUNG': {
+        'en': 'WARNING',
+        'de': 'WARNUNG'
+    },
+    'This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.': {
+        'en': 'This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.',
+        'de': 'Dieser Adapter befindet sich in einem frühen Entwicklungsstadium. Sie verwenden diesen Adapter auf eigene Gefahr. Der Autor übernimmt keine Haftung für eventuelle Schäden.'
+    },
+    'Polling Interval / Abfrageintervall (seconds)': {
+        'en': 'Polling Interval (seconds)',
+        'de': 'Abfrageintervall (Sekunden)'
+    },
+    'AC Infinity Password / Passwort': {
+        'en': 'AC Infinity Password',
+        'de': 'AC Infinity Passwort'
     }
 };
