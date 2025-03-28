@@ -37,7 +37,7 @@ The developer accepts no responsibility for any harm or issues arising from the 
 ## Setup
 
 1. Enter your AC Infinity email and password
-2. Set the polling interval (minimum 5 seconds)
+2. Set the polling interval (minimum 10 seconds)
 3. Click Save & Close
 
 ## Usage
@@ -58,7 +58,7 @@ After installation, the adapter will create device objects for each of your AC I
 
 ## Changelog
 
-### 0.4.1 (2025-03-28)
+### 0.4.3 (2025-03-28)
 * Bug fixes and improvements
 
 ### 0.3.1 (2025-03-27)
