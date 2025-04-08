@@ -54,7 +54,8 @@
   ],
   "scripts": {
     "test": "mocha test/unit --exit",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "npm run lint && npm test"
   },
   "bugs": {
     "url": "https://github.com/raspilaurent/ioBroker.acinfinity/issues"
