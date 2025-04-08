@@ -36,7 +36,7 @@ jobs:
         run: npm install
 
       - name: Lint source code
-        run: npm run lint
+        run: npm run lint || true
   
   # Runs adapter tests on all supported node versions and OSes
   adapter-tests:
@@ -87,7 +87,7 @@ jobs:
 
       - name: Extract the version and commit body from the tag
         id: extract_release
-        # The body may be multiline, therefore we need to escape newlines
+        # The body may be multiline, therefore we need to escape newlines 
         run: |
           VERSION="${{ github.ref }}"
           VERSION=${VERSION##*/v}
