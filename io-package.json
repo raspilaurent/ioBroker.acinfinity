@@ -1,9 +1,9 @@
 {
     "common": {
         "name": "acinfinity",
-        "version": "0.5.0",
+        "version": "0.5.1",
         "news": {
-            "0.5.0": {
+            "0.5.1": {
                 "en": "Bug fixes and improvements",
                 "de": "Fehlerbehebungen und Verbesserungen",
                 "ru": "Исправления ошибок и улучшения",
