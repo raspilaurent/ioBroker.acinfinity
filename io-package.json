@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "acinfinity",
-        "version": "0.4.3",
+        "version": "0.5.0",
         "news": {
+            "0.5.0": {
+                "en": "Bug fixes and improvements",
+                "de": "Fehlerbehebungen und Verbesserungen",
+                "ru": "Исправления ошибок и улучшения",
+                "pt": "Correções de bugs e melhorias",
+                "nl": "Bugfixes en verbeteringen",
+                "fr": "Corrections de bugs et améliorations",
+                "it": "Correzioni di bug e miglioramenti",
+                "es": "Correcciones de errores y mejoras",
+                "pl": "Poprawki błędów i ulepszenia",
+                "uk": "Виправлення помилок та вдосконалення",
+                "zh-cn": "错误修复和改进"
+            },
             "0.4.3": {
                 "en": "Bug fixes and improvements",
                 "de": "Fehlerbehebungen und Verbesserungen",
