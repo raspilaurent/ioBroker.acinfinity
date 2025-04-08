@@ -58,6 +58,9 @@ After installation, the adapter will create device objects for each of your AC I
 
 ## Changelog
 
+### 0.5.0 (2025-04-08)
+* more bug fixes and improvements
+
 ### 0.4.3 (2025-03-28)
 * Bug fixes and improvements
 
