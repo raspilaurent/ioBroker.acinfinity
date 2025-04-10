@@ -79,9 +79,10 @@
             "ioBroker"
         ],
         "licenseInformation": {
-            "type": "MIT"
-        },
-        "platform": "Javascript/Node.js",
+            "type": "free",
+            "license": "MIT"
+          },
+              "platform": "Javascript/Node.js",
         "icon": "acinfinity.png",
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/raspilaurent/ioBroker.acinfinity/master/admin/acinfinity.png",
