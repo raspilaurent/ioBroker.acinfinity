@@ -14,6 +14,8 @@ This adapter allows you to control your AC Infinity devices via ioBroker.
 
 ## ALL CREDITS TO: https://github.com/dalinicus/homeassistant-acinfinity
 
+## alpha-testing: Many thanks to growzilla!
+
 ## Features
 
 * Control AC Infinity fans, timers, and other connected devices
@@ -57,6 +59,9 @@ After installation, the adapter will create device objects for each of your AC I
 * For debugging, you can enable verbose logging in the instance settings
 
 ## Changelog
+
+### 0.5.5 (2025-04-12)
+* fixed some more errors and warnings
 
 ### 0.5.2 (2025-04-08)
 * more and more bug fixes and improvements

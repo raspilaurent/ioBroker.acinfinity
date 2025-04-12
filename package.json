@@ -1,6 +1,6 @@
 {
   "name": "iobroker.acinfinity",
-  "version": "0.5.2",
+  "version": "0.5.5",
   "description": "Monitor and control AC Infinity devices",
   "author": {
     "name": "laurent Standard",
@@ -44,6 +44,14 @@
     "typescript": "~5.0.4"
   },
   "main": "main.js",
+  "files": [
+    "admin/{,!(src)/**}/!(tsconfig|tsconfig.*).json",
+    "admin{,/!(src)/**}/*.{html,css,png,svg,jpg,js}",
+    "lib/",
+    "io-package.json",
+    "LICENSE",
+    "main.js"
+  ],
   "scripts": {
     "test": "mocha test/unit --exit",
     "lint": "eslint .",
