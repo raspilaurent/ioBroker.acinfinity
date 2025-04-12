@@ -78,9 +78,7 @@
             "Controller 69pro+",
             "ioBroker"
         ],
-        "licenseInformation": {
-            "type": "MIT"
-        },
+        "license": "MIT",
         "platform": "Javascript/Node.js",
         "icon": "acinfinity.png",
         "enabled": true,
