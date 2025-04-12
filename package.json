@@ -12,8 +12,7 @@
     "Pro 69",
     "AC Infinity",
     "growing",
-    "climate control",
-    "ioBroker"
+    "climate control"
   ],
   "repository": {
     "type": "git",
@@ -45,13 +44,6 @@
     "typescript": "~5.0.4"
   },
   "main": "main.js",
-  "files": [
-    "admin/",
-    "lib/",
-    "io-package.json",
-    "LICENSE",
-    "main.js"
-  ],
   "scripts": {
     "test": "mocha test/unit --exit",
     "lint": "eslint .",
