@@ -118,12 +118,6 @@
             {
                 "admin": ">=7.4.10"
             }
-        ],
-        "protectedNative": [
-            "password"
-        ],
-        "encryptedNative": [
-            "password"
         ]
     },
     "native": {
@@ -166,5 +160,11 @@
             },
             "native": {}
         }
+    ],
+    "protectedNative": [
+        "password"
+    ],
+    "encryptedNative": [
+        "password"
     ]
 }
