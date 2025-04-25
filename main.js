@@ -172,13 +172,13 @@ class ACInfinity extends utils.Adapter {
                 this.log.debug(`Updating device ${device.devId} (${device.devName})`);
                 
                 // Debug logging for important values
-                if (typeof device.temperature !== 'undefined') {
+                if (typeof device.temperature !== "undefined") {
                     this.log.debug(`Device ${device.devId} temperature: ${device.temperature} (raw), ${device.temperature/100} (converted)`);
                 }
-                if (typeof device.humidity !== 'undefined') {
+                if (typeof device.humidity !== "undefined") {
                     this.log.debug(`Device ${device.devId} humidity: ${device.humidity} (raw), ${device.humidity/100} (converted)`);
                 }
-                if (typeof device.vpdnums !== 'undefined') {
+                if (typeof device.vpdnums !== "undefined") {
                     this.log.debug(`Device ${device.devId} vpd: ${device.vpdnums} (raw), ${device.vpdnums/100} (converted)`);
                 }
                 
@@ -249,7 +249,7 @@ class ACInfinity extends utils.Adapter {
      */
     async onStateChange(id, state) {
         // Nur für Debug-Zwecke, kann später entfernt oder als debug-Level geloggt werden
-        this.log.debug(`State change detected: ${id} = ${state ? state.val : 'null'}, ack = ${state ? state.ack : 'null'}`);
+        this.log.debug(`State change detected: ${id} = ${state ? state.val : "null"}, ack = ${state ? state.ack : "null"}`);
 
         // Standard-Verarbeitung
         if (!state) {
@@ -273,7 +273,7 @@ class ACInfinity extends utils.Adapter {
 
             // Überprüfen, ob wir angemeldet sind
             if (!this.isConnected || !this.client.isLoggedIn()) {
-                this.log.info(`Not logged in, trying to log in again. isConnected: ${this.isConnected}, isLoggedIn: ${this.client ? this.client.isLoggedIn() : 'client is null'}`);
+                this.log.info(`Not logged in, trying to log in again. isConnected: ${this.isConnected}, isLoggedIn: ${this.client ? this.client.isLoggedIn() : "client is null"}`);
                 try {
                     await this.client.login();
                     this.log.info(`Re-login successful. Token: ${this.client.token}`);
@@ -288,7 +288,7 @@ class ACInfinity extends utils.Adapter {
             }
 
             // Parse ID, um zu prüfen, um welche Art von State es sich handelt
-            const idParts = id.split('.');
+            const idParts = id.split(".");
             this.log.debug(`ID parts: ${JSON.stringify(idParts)}`);
 
             // Lasse den StateManager die Änderung verarbeiten
