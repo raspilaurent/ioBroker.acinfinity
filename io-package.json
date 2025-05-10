@@ -133,6 +133,12 @@
             }
         ]
     },
+    "protectedNative": [
+        "password"
+    ],
+    "encryptedNative": [
+        "password"
+    ],
     "native": {
         "email": "",
         "password": "",
