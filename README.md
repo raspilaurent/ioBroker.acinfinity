@@ -79,7 +79,7 @@ After installation, the adapter will create device objects for each of your AC I
 
 MIT License
 
-Copyright (c) 2025 raspilaurent
+Copyright (c) 2025-2026 raspilaurent
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
