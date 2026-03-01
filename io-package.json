@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.7.1",
+    "version": "0.7.2",
     "news": {
+      "0.7.2": {
+        "en": "Code quality: migrate to ESLint 9 with @iobroker/eslint-config",
+        "de": "Codequalität: Migration auf ESLint 9 mit @iobroker/eslint-config",
+        "ru": "Качество кода: миграция на ESLint 9 с @iobroker/eslint-config",
+        "pt": "Qualidade do código: migração para ESLint 9 com @iobroker/eslint-config",
+        "nl": "Codekwaliteit: migratie naar ESLint 9 met @iobroker/eslint-config",
+        "fr": "Qualité du code: migration vers ESLint 9 avec @iobroker/eslint-config",
+        "it": "Qualità del codice: migrazione a ESLint 9 con @iobroker/eslint-config",
+        "es": "Calidad del código: migración a ESLint 9 con @iobroker/eslint-config",
+        "pl": "Jakość kodu: migracja do ESLint 9 z @iobroker/eslint-config",
+        "uk": "Якість коду: міграція на ESLint 9 з @iobroker/eslint-config",
+        "zh-cn": "代码质量：迁移到 ESLint 9 并使用 @iobroker/eslint-config"
+      },
       "0.7.1": {
         "en": "Add value ranges to state names for better readability",
         "de": "Wertebereiche zu Datenpunkt-Namen hinzugefügt für bessere Lesbarkeit",
