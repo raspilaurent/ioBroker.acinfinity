@@ -34,6 +34,19 @@
             "lg": 3,
             "xl": 2,
             "xs": 6
+        },
+        "disclaimer": {
+            "type": "staticText",
+            "text": "disclaimer",
+            "newLine": true,
+            "xs": 12,
+            "style": {
+                "color": "#888888",
+                "fontSize": "0.85em",
+                "marginTop": "16px",
+                "paddingLeft": "10px",
+                "borderLeft": "3px solid #cccccc"
+            }
         }
     }
 }

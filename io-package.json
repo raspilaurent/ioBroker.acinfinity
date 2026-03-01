@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.7.3",
+    "version": "0.7.4",
     "news": {
+      "0.7.4": {
+        "en": "Admin UI: add disclaimer note about limited device compatibility",
+        "de": "Admin-UI: Hinweis zur eingeschränkten Gerätekompatibilität hinzugefügt",
+        "ru": "Admin UI: добавлено предупреждение об ограниченной совместимости устройств",
+        "pt": "Admin UI: adicionada nota de isenção de responsabilidade sobre compatibilidade limitada",
+        "nl": "Admin UI: disclaimer toegevoegd over beperkte apparaatcompatibiliteit",
+        "fr": "Admin UI: ajout d'une note d'avertissement sur la compatibilité limitée des appareils",
+        "it": "Admin UI: aggiunta nota informativa sulla compatibilità limitata dei dispositivi",
+        "es": "Admin UI: añadida nota de aviso sobre compatibilidad limitada de dispositivos",
+        "pl": "Admin UI: dodano informację o ograniczonej kompatybilności urządzeń",
+        "uk": "Admin UI: додано застереження про обмежену сумісність пристроїв",
+        "zh-cn": "管理界面：添加关于设备兼容性有限的免责声明"
+      },
       "0.7.3": {
         "en": "Admin UI: remove warning box, clean up settings layout, fix help link",
         "de": "Admin-UI: Warnhinweis entfernt, Einstellungslayout bereinigt, Hilfe-Link korrigiert",

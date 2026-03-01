@@ -8,5 +8,6 @@
     "Minimum polling interval is 5 seconds.": "Мінімальний інтервал опитування становить 5 секунд.",
     "Note: AC Infinity truncates passwords to 25 characters.": "Примітка: AC Infinity скорочує паролі до 25 символів.",
     "WARNING": "ПОПЕРЕДЖЕННЯ",
-    "This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.": "Цей адаптер знаходиться на ранній стадії розробки. Ви використовуєте цей адаптер на власний ризик. Автор не несе відповідальності за будь-які збитки."
+    "This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.": "Цей адаптер знаходиться на ранній стадії розробки. Ви використовуєте цей адаптер на власний ризик. Автор не несе відповідальності за будь-які збитки.",
+    "disclaimer": "Примітка: Цей адаптер тестувався лише з AC Infinity Controller 69 Pro. Сумісність з іншими пристроями не гарантується. Використовуйте на власний ризик. Автор не несе відповідальності за будь-які збитки."
 }

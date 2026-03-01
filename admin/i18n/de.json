@@ -8,5 +8,6 @@
     "Minimum polling interval is 5 seconds.": "Minimales Abfrageintervall beträgt 5 Sekunden.",
     "Note: AC Infinity truncates passwords to 25 characters.": "Hinweis: AC Infinity kürzt Passwörter auf 25 Zeichen.",
     "WARNING": "WARNUNG",
-    "This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.": "Dieser Adapter befindet sich in einem frühen Entwicklungsstadium. Sie verwenden diesen Adapter auf eigene Gefahr. Der Autor übernimmt keine Haftung für eventuelle Schäden."
+    "This adapter is in an early development stage. You use this adapter at your own risk. The author assumes no liability for any damage.": "Dieser Adapter befindet sich in einem frühen Entwicklungsstadium. Sie verwenden diesen Adapter auf eigene Gefahr. Der Autor übernimmt keine Haftung für eventuelle Schäden.",
+    "disclaimer": "Hinweis: Dieser Adapter wurde nur mit dem AC Infinity Controller 69 Pro getestet. Die Kompatibilität mit anderen Geräten kann nicht garantiert werden. Nutzung auf eigene Gefahr. Der Autor übernimmt keine Haftung für etwaige Schäden."
 }
