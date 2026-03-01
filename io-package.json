@@ -128,15 +128,14 @@
     },
     "dependencies": [
       {
-        "js-controller": ">=5.0.19"
+        "js-controller": ">=6.0.11"
       }
     ],
     "globalDependencies": [
       {
-        "admin": ">=7.4.10"
+        "admin": ">=7.6.20"
       }
-    ],
-    "installedFrom": "raspilaurent/ioBroker.acinfinity#eefbc9dee024f872d051f4fe12bde5de2976ce3a"
+    ]
   },
   "native": {
     "email": "",

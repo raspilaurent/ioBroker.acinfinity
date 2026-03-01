@@ -20,14 +20,14 @@
     "url": "https://github.com/raspilaurent/ioBroker.acinfinity.git"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^3.2.3",
+    "@iobroker/adapter-core": "^3.3.2",
     "axios": "^1.5.0"
   },
   "devDependencies": {
-    "@iobroker/testing": "^5.0.0",
+    "@iobroker/testing": "^5.2.2",
     "@types/chai": "^4.3.5",
     "@types/chai-as-promised": "^7.1.5",
     "@types/mocha": "^10.0.1",
