@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.8.1",
+    "version": "0.8.5",
     "news": {
+      "0.8.5": {
+        "en": "Admin UI: disclaimer text now red and bold; minimum polling interval increased to 10 seconds",
+        "de": "Admin-UI: Hinweistext jetzt rot und fett; minimales Abfrageintervall auf 10 Sekunden erhöht",
+        "ru": "Admin UI: текст предупреждения теперь красный и жирный; минимальный интервал увеличен до 10 секунд",
+        "pt": "Admin UI: texto de aviso agora vermelho e negrito; intervalo mínimo aumentado para 10 segundos",
+        "nl": "Admin UI: disclaimertekst nu rood en vet; minimale polling interval verhoogd naar 10 seconden",
+        "fr": "Admin UI: texte d'avertissement maintenant rouge et gras; intervalle minimum augmenté à 10 secondes",
+        "it": "Admin UI: testo disclaimer ora rosso e grassetto; intervallo minimo aumentato a 10 secondi",
+        "es": "Admin UI: texto de aviso ahora rojo y negrita; intervalo mínimo aumentado a 10 segundos",
+        "pl": "Admin UI: tekst zastrzeżeń teraz czerwony i pogrubiony; minimalny interwał zwiększony do 10 sekund",
+        "uk": "Admin UI: текст застереження тепер червоний і жирний; мінімальний інтервал збільшено до 10 секунд",
+        "zh-cn": "管理界面：免责声明文字现为红色加粗；最小轮询间隔增加至10秒"
+      },
       "0.8.1": {
         "en": "Fix: trailing comma in io-package.json news section",
         "de": "Fix: überschüssiges Komma in io-package.json behoben",
@@ -80,19 +93,6 @@
         "pl": "Dodano zakresy wartości do nazw punktów danych",
         "uk": "Додано діапазони значень до назв точок даних",
         "zh-cn": "为数据点名称添加了值范围以提高可读性"
-      },
-      "0.7.0": {
-        "en": "Complete rewrite by Claude Code (AI) based on homeassistant-acinfinity; all 8 modes writable; new sensors (CO2/soil/water); only tested with Controller 69 Pro — use at your own risk",
-        "de": "Vollständige Neu-Implementierung durch Claude Code (KI) auf Basis von homeassistant-acinfinity; alle 8 Modi schreibbar; neue Sensoren (CO2/Boden/Wasser); nur mit Controller 69 Pro getestet — Nutzung auf eigene Gefahr",
-        "ru": "Полная переработка с помощью Claude Code (ИИ) на основе homeassistant-acinfinity; все 8 режимов доступны для записи; новые датчики (CO2/почва/вода); протестировано только с Controller 69 Pro",
-        "pt": "Reescrita completa pelo Claude Code (IA) baseada em homeassistant-acinfinity; todos os 8 modos graváveis; novos sensores (CO2/solo/água); testado apenas com Controller 69 Pro",
-        "nl": "Volledige herschrijving door Claude Code (AI) op basis van homeassistant-acinfinity; alle 8 modi beschrijfbaar; nieuwe sensoren (CO2/bodem/water); alleen getest met Controller 69 Pro",
-        "fr": "Réécriture complète par Claude Code (IA) basée sur homeassistant-acinfinity; tous les 8 modes modifiables; nouveaux capteurs (CO2/sol/eau); testé uniquement avec Controller 69 Pro",
-        "it": "Riscrittura completa da Claude Code (AI) basata su homeassistant-acinfinity; tutti gli 8 modi scrivibili; nuovi sensori (CO2/suolo/acqua); testato solo con Controller 69 Pro",
-        "es": "Reescritura completa por Claude Code (IA) basada en homeassistant-acinfinity; los 8 modos escribibles; nuevos sensores (CO2/suelo/agua); probado solo con Controller 69 Pro",
-        "pl": "Kompletna przebudowa przez Claude Code (AI) na podstawie homeassistant-acinfinity; wszystkie 8 trybów zapisywalnych; nowe czujniki (CO2/gleba/woda); testowane tylko z Controller 69 Pro",
-        "uk": "Повна переробка за допомогою Claude Code (ШІ) на основі homeassistant-acinfinity; всі 8 режимів доступні для запису; нові датчики (CO2/ґрунт/вода); протестовано лише з Controller 69 Pro",
-        "zh-cn": "由Claude Code（AI）基于homeassistant-acinfinity完全重写；所有8种模式可写；新增传感器（CO2/土壤/水位）；仅在Controller 69 Pro上测试"
       }
     },
     "titleLang": {

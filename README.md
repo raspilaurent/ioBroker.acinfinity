@@ -205,6 +205,10 @@ Der Adapter erkennt automatisch alle verbundenen Controller und legt den State-B
 
 ## Changelog
 
+### 0.8.5 (2026-03-01)
+- Admin-UI: Hinweistext jetzt rot und fett dargestellt
+- Admin-UI: Minimales Abfrageintervall von 5 auf 10 Sekunden erhöht
+
 ### 0.8.1 (2026-03-01)
 - Fix: JSON-Syntaxfehler (überschüssiges Komma) in io-package.json behoben
 
