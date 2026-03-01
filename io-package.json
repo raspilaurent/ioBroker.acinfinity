@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "news": {
+      "0.8.1": {
+        "en": "Fix: trailing comma in io-package.json news section",
+        "de": "Fix: überschüssiges Komma in io-package.json behoben",
+        "ru": "Исправление: лишняя запятая в io-package.json",
+        "pt": "Correção: vírgula extra no io-package.json removida",
+        "nl": "Fix: overtollige komma in io-package.json verwijderd",
+        "fr": "Correction: virgule superflue dans io-package.json supprimée",
+        "it": "Fix: virgola in eccesso rimossa da io-package.json",
+        "es": "Fix: coma sobrante eliminada en io-package.json",
+        "pl": "Poprawka: usunięto nadmiarowy przecinek w io-package.json",
+        "uk": "Виправлення: зайва кома в io-package.json видалена",
+        "zh-cn": "修复：删除 io-package.json 中多余的逗号"
+      },
       "0.8.0": {
         "en": "Security: update axios and form-data to fix high and critical vulnerabilities",
         "de": "Sicherheit: axios und form-data aktualisiert zur Behebung kritischer Sicherheitslücken",
@@ -80,19 +93,6 @@
         "pl": "Kompletna przebudowa przez Claude Code (AI) na podstawie homeassistant-acinfinity; wszystkie 8 trybów zapisywalnych; nowe czujniki (CO2/gleba/woda); testowane tylko z Controller 69 Pro",
         "uk": "Повна переробка за допомогою Claude Code (ШІ) на основі homeassistant-acinfinity; всі 8 режимів доступні для запису; нові датчики (CO2/ґрунт/вода); протестовано лише з Controller 69 Pro",
         "zh-cn": "由Claude Code（AI）基于homeassistant-acinfinity完全重写；所有8种模式可写；新增传感器（CO2/土壤/水位）；仅在Controller 69 Pro上测试"
-      },
-      "0.5.6": {
-        "en": "Bug fixes and improvements",
-        "de": "Fehlerbehebungen und Verbesserungen",
-        "ru": "Исправления ошибок и улучшения",
-        "pt": "Correções de bugs e melhorias",
-        "nl": "Bugfixes en verbeteringen",
-        "fr": "Corrections de bugs et améliorations",
-        "it": "Correzioni di bug e miglioramenti",
-        "es": "Correcciones de errores y mejoras",
-        "pl": "Poprawki błędów i ulepszenia",
-        "uk": "Виправлення помилок та вдосконалення",
-        "zh-cn": "错误修复和改进"
       }
     },
     "titleLang": {

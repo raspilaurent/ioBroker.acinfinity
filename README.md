@@ -205,6 +205,9 @@ Der Adapter erkennt automatisch alle verbundenen Controller und legt den State-B
 
 ## Changelog
 
+### 0.8.1 (2026-03-01)
+- Fix: JSON-Syntaxfehler (überschüssiges Komma) in io-package.json behoben
+
 ### 0.8.0 (2026-03-01)
 - Sicherheit: axios und form-data aktualisiert zur Behebung kritischer Sicherheitslücken (GHSA-4hjh-wcwx-xvwj, GHSA-43fc-jf86-j433, GHSA-fjxv-7rqg-78g4)
 
