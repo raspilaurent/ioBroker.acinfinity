@@ -1,20 +1,20 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.6.0-beta.1",
+    "version": "0.7.0",
     "news": {
-      "0.6.0-beta.1": {
-        "en": "Full feature parity with HA integration: all 8 modes writable, axios replaces curl, new sensors (CO2/soil/water), more controller types, deviceType bug fixed",
-        "de": "Vollständige Feature-Parität mit der HA-Integration: alle 8 Modi schreibbar, axios ersetzt curl, neue Sensoren (CO2/Boden/Wasser), mehr Controller-Typen, deviceType-Bug behoben",
-        "ru": "Полная функциональная совместимость с интеграцией HA: все 8 режимов доступны для записи, axios заменяет curl, новые датчики (CO2/почва/вода), больше типов контроллеров, исправлена ошибка deviceType",
-        "pt": "Paridade completa de recursos com a integração HA: todos os 8 modos graváveis, axios substitui curl, novos sensores (CO2/solo/água), mais tipos de controladores, bug deviceType corrigido",
-        "nl": "Volledige functiepariteit met HA-integratie: alle 8 modi beschrijfbaar, axios vervangt curl, nieuwe sensoren (CO2/bodem/water), meer controllertypen, deviceType-bug opgelost",
-        "fr": "Parité complète des fonctionnalités avec l'intégration HA: tous les 8 modes modifiables, axios remplace curl, nouveaux capteurs (CO2/sol/eau), plus de types de contrôleurs, bug deviceType corrigé",
-        "it": "Piena compatibilità delle funzionalità con l'integrazione HA: tutti gli 8 modi scrivibili, axios sostituisce curl, nuovi sensori (CO2/suolo/acqua), più tipi di controller, bug deviceType corretto",
-        "es": "Paridad completa de funciones con la integración HA: los 8 modos escribibles, axios reemplaza curl, nuevos sensores (CO2/suelo/agua), más tipos de controladores, error deviceType corregido",
-        "pl": "Pełna zgodność funkcji z integracją HA: wszystkie 8 trybów zapisywalnych, axios zastępuje curl, nowe czujniki (CO2/gleba/woda), więcej typów kontrolerów, naprawiono błąd deviceType",
-        "uk": "Повна функціональна сумісність з інтеграцією HA: всі 8 режимів доступні для запису, axios замінює curl, нові датчики (CO2/ґрунт/вода), більше типів контролерів, виправлено помилку deviceType",
-        "zh-cn": "与HA集成完全功能对等：所有8种模式可写，axios替代curl，新增传感器（CO2/土壤/水位），支持更多控制器类型，修复deviceType错误"
+      "0.7.0": {
+        "en": "Complete rewrite by Claude Code (AI) based on homeassistant-acinfinity; all 8 modes writable; new sensors (CO2/soil/water); only tested with Controller 69 Pro — use at your own risk",
+        "de": "Vollständige Neu-Implementierung durch Claude Code (KI) auf Basis von homeassistant-acinfinity; alle 8 Modi schreibbar; neue Sensoren (CO2/Boden/Wasser); nur mit Controller 69 Pro getestet — Nutzung auf eigene Gefahr",
+        "ru": "Полная переработка с помощью Claude Code (ИИ) на основе homeassistant-acinfinity; все 8 режимов доступны для записи; новые датчики (CO2/почва/вода); протестировано только с Controller 69 Pro",
+        "pt": "Reescrita completa pelo Claude Code (IA) baseada em homeassistant-acinfinity; todos os 8 modos graváveis; novos sensores (CO2/solo/água); testado apenas com Controller 69 Pro",
+        "nl": "Volledige herschrijving door Claude Code (AI) op basis van homeassistant-acinfinity; alle 8 modi beschrijfbaar; nieuwe sensoren (CO2/bodem/water); alleen getest met Controller 69 Pro",
+        "fr": "Réécriture complète par Claude Code (IA) basée sur homeassistant-acinfinity; tous les 8 modes modifiables; nouveaux capteurs (CO2/sol/eau); testé uniquement avec Controller 69 Pro",
+        "it": "Riscrittura completa da Claude Code (AI) basata su homeassistant-acinfinity; tutti gli 8 modi scrivibili; nuovi sensori (CO2/suolo/acqua); testato solo con Controller 69 Pro",
+        "es": "Reescritura completa por Claude Code (IA) basada en homeassistant-acinfinity; los 8 modos escribibles; nuevos sensores (CO2/suelo/agua); probado solo con Controller 69 Pro",
+        "pl": "Kompletna przebudowa przez Claude Code (AI) na podstawie homeassistant-acinfinity; wszystkie 8 trybów zapisywalnych; nowe czujniki (CO2/gleba/woda); testowane tylko z Controller 69 Pro",
+        "uk": "Повна переробка за допомогою Claude Code (ШІ) на основі homeassistant-acinfinity; всі 8 режимів доступні для запису; нові датчики (CO2/ґрунт/вода); протестовано лише з Controller 69 Pro",
+        "zh-cn": "由Claude Code（AI）基于homeassistant-acinfinity完全重写；所有8种模式可写；新增传感器（CO2/土壤/水位）；仅在Controller 69 Pro上测试"
       },
       "0.5.6": {
         "en": "Bug fixes and improvements",
@@ -83,17 +83,17 @@
       }
     },
     "titleLang": {
-      "en": "AC Infinity (BETA-VERSION - USE AT YOUR OWN RISK)",
-      "de": "AC Infinity (BETA-VERSION - NUTZUNG AUF EIGENE GEFAHR)",
-      "ru": "AC Infinity (БЕТА-ВЕРСИЯ - ИСПОЛЬЗУЙТЕ НА СВОЙ СТРАХ И РИСК)",
-      "pt": "AC Infinity (VERSÃO BETA - USE POR SUA CONTA E RISCO)",
-      "nl": "AC Infinity (BÈTA-VERSIE - GEBRUIK OP EIGEN RISICO)",
-      "fr": "AC Infinity (VERSION BÊTA - UTILISATION À VOS RISQUES ET PÉRILS)",
-      "it": "AC Infinity (VERSIONE BETA - USARE A PROPRIO RISCHIO)",
-      "es": "AC Infinity (VERSIÓN BETA - ÚSELO BAJO SU PROPIO RIESGO)",
-      "pl": "AC Infinity (WERSJA BETA - KORZYSTAJ NA WŁASNE RYZYKO)",
-      "uk": "AC Infinity (БЕТА-ВЕРСІЯ - ВИКОРИСТОВУЙТЕ НА ВЛАСНИЙ РИЗИК)",
-      "zh-cn": "AC Infinity (测试版 - 使用风险自负)"
+      "en": "AC Infinity (USE AT YOUR OWN RISK)",
+      "de": "AC Infinity (NUTZUNG AUF EIGENE GEFAHR)",
+      "ru": "AC Infinity (ИСПОЛЬЗУЙТЕ НА СВОЙ СТРАХ И РИСК)",
+      "pt": "AC Infinity (USE POR SUA CONTA E RISCO)",
+      "nl": "AC Infinity (GEBRUIK OP EIGEN RISICO)",
+      "fr": "AC Infinity (UTILISATION À VOS RISQUES ET PÉRILS)",
+      "it": "AC Infinity (USARE A PROPRIO RISCHIO)",
+      "es": "AC Infinity (ÚSELO BAJO SU PROPIO RIESGO)",
+      "pl": "AC Infinity (KORZYSTAJ NA WŁASNE RYZYKO)",
+      "uk": "AC Infinity (ВИКОРИСТОВУЙТЕ НА ВЛАСНИЙ РИЗИК)",
+      "zh-cn": "AC Infinity (使用风险自负)"
     },
     "desc": {
       "en": "Adapter for controlling AC Infinity smart devices",

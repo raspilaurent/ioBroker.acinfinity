@@ -3,26 +3,44 @@
 ![Logo](admin/acinfinity.png)
 
 [![NPM version](https://img.shields.io/npm/v/iobroker.acinfinity.svg)](https://www.npmjs.com/package/iobroker.acinfinity)
-[![Lizenz: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**BETA-VERSION — NUTZUNG AUF EIGENE GEFAHR**
+ioBroker-Adapter zur Überwachung und Steuerung von **AC Infinity UIS WiFi-Controllern**.
 
-ioBroker-Adapter zur Überwachung und Steuerung von **AC Infinity UIS WiFi-Controllern** (Controller 69 Pro, 69 Pro+, AI+, Outlet AI/AI+).
+---
 
-Alle Credits für das API-Reverse-Engineering gehen an **[dalinicus/homeassistant-acinfinity](https://github.com/dalinicus/homeassistant-acinfinity)**.
+## ⚠️ Wichtige Hinweise zur Nutzung
+
+> **Nur getestet mit: Controller 69 Pro (CTR69P)**
+>
+> Alle anderen Modelle (69 WiFi, 69 Pro+, AI+, Outlet AI, Outlet AI+) sind im Code implementiert, konnten jedoch mangels Hardware **nicht getestet werden**. Die Funktion dieser Geräte ist nicht garantiert.
+>
+> **Nutzung auf eigene Gefahr.** Es wird keinerlei Gewähr für Funktionsfähigkeit, Richtigkeit oder Eignung für einen bestimmten Zweck übernommen. Jegliche Haftung für direkte oder indirekte Schäden ist ausdrücklich ausgeschlossen — einschließlich Geräteausfälle, Datenverluste oder Fehlfunktionen des Systems.
+
+---
+
+## Herkunft & Credits
+
+Das **API-Reverse-Engineering** sowie das vollständige Verständnis der AC Infinity Cloud-Protokoll-Struktur stammen aus dem Home Assistant Adapter:
+
+> **[dalinicus/homeassistant-acinfinity](https://github.com/dalinicus/homeassistant-acinfinity)**
+>
+> Alle Credits für die API-Analyse und das Protokoll-Verständnis gehen an dieses Projekt.
+
+Der **gesamte ioBroker-Adapter-Code** wurde mit **[Claude Code](https://claude.ai/code)** (Anthropic AI) implementiert und auf Basis der oben genannten Home Assistant Integration für die ioBroker-Plattform umgeschrieben.
 
 ---
 
 ## Unterstützte Geräte
 
-| Modell | Typ-ID | Hinweis |
+| Modell | Typ-ID | Teststatus |
 |---|---|---|
-| Controller 69 WiFi (CTR69W) | 1 | Basis WiFi-Modell |
-| Controller 69 Pro (CTR69P) | 11 | |
-| Controller 69 Pro+ (CTR69Q) | 18 | |
-| Controller AI+ (CTR89Q) | 20 | 8-Port KI-Modell |
-| Controller Outlet AI (AC-ADA4) | 22 | 4-Steckdosen KI-Modell |
-| Controller Outlet AI+ (AC-ADA8) | 24 | 8-Steckdosen KI-Modell |
+| Controller 69 WiFi (CTR69W) | 1 | ⚠️ Nicht getestet |
+| Controller 69 Pro (CTR69P) | 11 | ✅ Getestet |
+| Controller 69 Pro+ (CTR69Q) | 18 | ⚠️ Nicht getestet |
+| Controller AI+ (CTR89Q) | 20 | ⚠️ Nicht getestet |
+| Controller Outlet AI (AC-ADA4) | 22 | ⚠️ Nicht getestet |
+| Controller Outlet AI+ (AC-ADA8) | 24 | ⚠️ Nicht getestet |
 
 > **Nicht unterstützt:** Nur-Bluetooth-Controller (z.B. Controller 67) — WiFi und Cloud-Sync erforderlich.
 
@@ -187,15 +205,15 @@ Der Adapter erkennt automatisch alle verbundenen Controller und legt den State-B
 
 ## Changelog
 
-### 0.6.0-beta.1 (2026-03-01)
-- **Alle 8 Port-Modi vollständig schreibbar** aus ioBroker (bisher funktionierten nur Ein/Aus)
-- **curl durch axios ersetzt** — einheitliche HTTP-Kommunikation, keine Shell-Aufrufe mehr
-- **Hardcodierten Referenz-Payload entfernt** aus `updateDeviceModeSettings`
-- **deviceType-Bug behoben** im Port-Einstellungs-Handler (numerische ID wurde als String verglichen)
-- **Neue Sensoren:** CO₂, Bodenfeuchtigkeit, Wasserstand, Verbindungsindikator
-- **Erweiterte Controller-Typen:** AI+, Outlet AI, Outlet AI+, CTR69W
-- Auto/VPD/Timer/Zyklus/Zeitplan-Parameter nutzen jetzt sauberen Einzelabruf → Änderung → Senden-Ablauf
-- Code-Bereinigung und verbesserte Log-Ausgaben
+### 0.7.0 (2026-03-01)
+- Adapter-Code vollständig mit Claude Code (Anthropic AI) auf Basis von homeassistant-acinfinity neu implementiert
+- Alle 8 Port-Modi vollständig schreibbar aus ioBroker (Off / On / Auto / Timer to On / Timer to Off / Cycle / Schedule / VPD)
+- curl durch axios ersetzt — keine Shell-Aufrufe mehr
+- Neue Sensoren: CO₂, Bodenfeuchtigkeit, Wasserstand, pluggedIn
+- Erweiterte Controller-Typen: CTR69W, CTR69P, CTR69Q, CTR89Q, AC-ADA4, AC-ADA8
+- deviceType-Bug behoben im Port-Einstellungs-Handler
+- Hardcodierten Referenz-Payload entfernt
+- Abhängigkeiten aktualisiert: js-controller ≥6.0.11, admin ≥7.6.20, Node.js ≥20
 
 ### 0.5.6 (2025-04-27)
 - Fehlerbehebungen und Verbesserungen
