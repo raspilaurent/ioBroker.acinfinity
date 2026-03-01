@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.7.4",
+    "version": "0.8.0",
     "news": {
+      "0.8.0": {
+        "en": "Security: update axios and form-data to fix high and critical vulnerabilities",
+        "de": "Sicherheit: axios und form-data aktualisiert zur Behebung kritischer Sicherheitslücken",
+        "ru": "Безопасность: обновлены axios и form-data для устранения критических уязвимостей",
+        "pt": "Segurança: atualização do axios e form-data para corrigir vulnerabilidades críticas",
+        "nl": "Beveiliging: axios en form-data bijgewerkt om kritieke kwetsbaarheden te verhelpen",
+        "fr": "Sécurité: mise à jour d'axios et form-data pour corriger des vulnérabilités critiques",
+        "it": "Sicurezza: aggiornamento di axios e form-data per correggere vulnerabilità critiche",
+        "es": "Seguridad: actualización de axios y form-data para corregir vulnerabilidades críticas",
+        "pl": "Bezpieczeństwo: aktualizacja axios i form-data w celu usunięcia krytycznych luk bezpieczeństwa",
+        "uk": "Безпека: оновлено axios та form-data для усунення критичних вразливостей",
+        "zh-cn": "安全：更新 axios 和 form-data 以修复严重安全漏洞"
+      },
       "0.7.4": {
         "en": "Admin UI: add disclaimer note about limited device compatibility",
         "de": "Admin-UI: Hinweis zur eingeschränkten Gerätekompatibilität hinzugefügt",
@@ -81,19 +94,6 @@
         "uk": "Виправлення помилок та вдосконалення",
         "zh-cn": "错误修复和改进"
       },
-      "0.5.5": {
-        "en": "Bug fixes and improvements",
-        "de": "Fehlerbehebungen und Verbesserungen",
-        "ru": "Исправления ошибок и улучшения",
-        "pt": "Correções de bugs e melhorias",
-        "nl": "Bugfixes en verbeteringen",
-        "fr": "Corrections de bugs et améliorations",
-        "it": "Correzioni di bug e miglioramenti",
-        "es": "Correcciones de errores y mejoras",
-        "pl": "Poprawki błędów i ulepszenia",
-        "uk": "Виправлення помилок та вдосконалення",
-        "zh-cn": "错误修复和改进"
-      }
     },
     "titleLang": {
       "en": "AC Infinity (USE AT YOUR OWN RISK)",
