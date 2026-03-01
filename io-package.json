@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.7.0",
+    "version": "0.7.1",
     "news": {
+      "0.7.1": {
+        "en": "Add value ranges to state names for better readability",
+        "de": "Wertebereiche zu Datenpunkt-Namen hinzugefügt für bessere Lesbarkeit",
+        "ru": "Добавлены диапазоны значений к названиям точек данных",
+        "pt": "Intervalos de valores adicionados aos nomes dos pontos de dados",
+        "nl": "Waardebereiken toegevoegd aan namen van datapunten",
+        "fr": "Plages de valeurs ajoutées aux noms des points de données",
+        "it": "Intervalli di valori aggiunti ai nomi dei punti dati",
+        "es": "Rangos de valores añadidos a los nombres de los puntos de datos",
+        "pl": "Dodano zakresy wartości do nazw punktów danych",
+        "uk": "Додано діапазони значень до назв точок даних",
+        "zh-cn": "为数据点名称添加了值范围以提高可读性"
+      },
       "0.7.0": {
         "en": "Complete rewrite by Claude Code (AI) based on homeassistant-acinfinity; all 8 modes writable; new sensors (CO2/soil/water); only tested with Controller 69 Pro — use at your own risk",
         "de": "Vollständige Neu-Implementierung durch Claude Code (KI) auf Basis von homeassistant-acinfinity; alle 8 Modi schreibbar; neue Sensoren (CO2/Boden/Wasser); nur mit Controller 69 Pro getestet — Nutzung auf eigene Gefahr",
