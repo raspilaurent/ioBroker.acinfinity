@@ -29,17 +29,21 @@
             "newLine": true,
             "min": 5,
             "default": 30,
+            "xs": 12,
             "sm": 6,
             "md": 4,
             "lg": 3,
-            "xl": 2,
-            "xs": 6
+            "xl": 2
         },
         "disclaimer": {
             "type": "staticText",
             "text": "disclaimer",
             "newLine": true,
             "xs": 12,
+            "sm": 12,
+            "md": 12,
+            "lg": 12,
+            "xl": 12,
             "style": {
                 "color": "#888888",
                 "fontSize": "0.85em",

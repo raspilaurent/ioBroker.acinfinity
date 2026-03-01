@@ -205,6 +205,18 @@ Der Adapter erkennt automatisch alle verbundenen Controller und legt den State-B
 
 ## Changelog
 
+### 0.7.4 (2026-03-01)
+- Admin-UI: Hinweistext zur eingeschränkten Gerätekompatibilität und Haftungsausschluss hinzugefügt
+
+### 0.7.3 (2026-03-01)
+- Admin-UI: Warnhinweis-Box entfernt, Einstellungslayout überarbeitet, Hilfe-Link korrigiert
+
+### 0.7.2 (2026-03-01)
+- Code: Migration auf ESLint 9 mit @iobroker/eslint-config
+
+### 0.7.1 (2026-03-01)
+- Wertebereiche zu Datenpunkt-Namen hinzugefügt für bessere Lesbarkeit
+
 ### 0.7.0 (2026-03-01)
 - Adapter-Code vollständig mit Claude Code (Anthropic AI) auf Basis von homeassistant-acinfinity neu implementiert
 - Alle 8 Port-Modi vollständig schreibbar aus ioBroker (Off / On / Auto / Timer to On / Timer to Off / Cycle / Schedule / VPD)
