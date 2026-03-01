@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.7.2",
+    "version": "0.7.3",
     "news": {
+      "0.7.3": {
+        "en": "Admin UI: remove warning box, clean up settings layout, fix help link",
+        "de": "Admin-UI: Warnhinweis entfernt, Einstellungslayout bereinigt, Hilfe-Link korrigiert",
+        "ru": "Admin UI: убран блок предупреждения, улучшен макет настроек, исправлена ссылка на справку",
+        "pt": "Admin UI: caixa de aviso removida, layout de configurações limpo, link de ajuda corrigido",
+        "nl": "Admin UI: waarschuwingsvak verwijderd, instellingen layout verbeterd, helplink gecorrigeerd",
+        "fr": "Admin UI: bloc d'avertissement supprimé, mise en page des paramètres améliorée, lien d'aide corrigé",
+        "it": "Admin UI: riquadro di avviso rimosso, layout impostazioni migliorato, link guida corretto",
+        "es": "Admin UI: cuadro de advertencia eliminado, diseño de configuración mejorado, enlace de ayuda corregido",
+        "pl": "Admin UI: usunięto pole ostrzeżenia, poprawiono układ ustawień, naprawiono link pomocy",
+        "uk": "Admin UI: видалено блок попередження, покращено макет налаштувань, виправлено посилання на довідку",
+        "zh-cn": "管理界面：移除警告框，优化设置布局，修复帮助链接"
+      },
       "0.7.2": {
         "en": "Code quality: migrate to ESLint 9 with @iobroker/eslint-config",
         "de": "Codequalität: Migration auf ESLint 9 mit @iobroker/eslint-config",
@@ -150,7 +163,7 @@
     "icon": "acinfinity.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/raspilaurent/ioBroker.acinfinity/master/admin/acinfinity.png",
-    "readme": "https://github.com/raspilaurent/ioBroker.acinfinity/blob/master/README.md",
+    "readme": "https://github.com/raspilaurent/ioBroker.acinfinity/blob/main/README.md",
     "loglevel": "info",
     "mode": "daemon",
     "type": "climate-control",
