@@ -25,9 +25,9 @@
         "pollingInterval": {
             "type": "number",
             "label": "Polling Interval (seconds)",
-            "help": "Minimum polling interval is 5 seconds.",
+            "help": "Minimum polling interval is 10 seconds.",
             "newLine": true,
-            "min": 5,
+            "min": 10,
             "default": 30,
             "xs": 12,
             "sm": 6,
@@ -45,11 +45,12 @@
             "lg": 12,
             "xl": 12,
             "style": {
-                "color": "#888888",
-                "fontSize": "0.85em",
+                "color": "#cc0000",
+                "fontSize": "1em",
+                "fontWeight": "bold",
                 "marginTop": "16px",
                 "paddingLeft": "10px",
-                "borderLeft": "3px solid #cccccc"
+                "borderLeft": "3px solid #cc0000"
             }
         }
     }
