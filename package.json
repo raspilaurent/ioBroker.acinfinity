@@ -1,6 +1,6 @@
 {
   "name": "iobroker.acinfinity",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "description": "Monitor and control AC Infinity devices",
   "author": {
     "name": "laurent Standard",

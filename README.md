@@ -210,6 +210,10 @@ The adapter automatically detects all connected controllers and creates the stat
 
 ## Changelog
 
+### 0.9.7 (2026-03-02)
+- Fix: remove deprecated `common.title` field from io-package.json (W184)
+- Docs: add manufacturer link to README (required for repository submission)
+
 ### 0.9.6 (2026-03-02)
 - Docs: README.md translated to English (required for ioBroker community)
 - Docs: German README moved to docs/de/README.md

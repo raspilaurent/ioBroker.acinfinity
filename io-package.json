@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.9.6",
+    "version": "0.9.7",
     "news": {
+      "0.9.7": {
+        "en": "Fix: remove deprecated common.title field (W184); add manufacturer link to README",
+        "de": "Fix: veraltetes Feld common.title entfernt (W184); Hersteller-Link in README hinzugefügt",
+        "ru": "Исправление: удалено устаревшее поле common.title (W184); добавлена ссылка на производителя в README",
+        "pt": "Fix: campo common.title obsoleto removido (W184); link do fabricante adicionado ao README",
+        "nl": "Fix: verouderd veld common.title verwijderd (W184); fabrikantlink toegevoegd aan README",
+        "fr": "Fix: champ common.title obsolète supprimé (W184); lien fabricant ajouté au README",
+        "it": "Fix: campo common.title obsoleto rimosso (W184); link produttore aggiunto al README",
+        "es": "Fix: campo common.title obsoleto eliminado (W184); enlace fabricante añadido al README",
+        "pl": "Poprawka: usunięto przestarzałe pole common.title (W184); dodano link producenta do README",
+        "uk": "Виправлення: видалено застаріле поле common.title (W184); додано посилання на виробника в README",
+        "zh-cn": "修复：移除已弃用的common.title字段（W184）；README中添加制造商链接"
+      },
       "0.9.6": {
         "en": "Docs: README translated to English; German README moved to docs/de/; CI: Node.js 24.x added to test matrix",
         "de": "Doku: README auf Englisch übersetzt; Deutsche README nach docs/de/ verschoben; CI: Node.js 24.x zur Test-Matrix hinzugefügt",
@@ -67,19 +80,6 @@
         "pl": "Poprawka: usunięto nadmiarowy przecinek w io-package.json",
         "uk": "Виправлення: зайва кома в io-package.json видалена",
         "zh-cn": "修复：删除 io-package.json 中多余的逗号"
-      },
-      "0.8.0": {
-        "en": "Security: update axios and form-data to fix high and critical vulnerabilities",
-        "de": "Sicherheit: axios und form-data aktualisiert zur Behebung kritischer Sicherheitslücken",
-        "ru": "Безопасность: обновлены axios и form-data для устранения критических уязвимостей",
-        "pt": "Segurança: atualização do axios e form-data para corrigir vulnerabilidades críticas",
-        "nl": "Beveiliging: axios en form-data bijgewerkt om kritieke kwetsbaarheden te verhelpen",
-        "fr": "Sécurité: mise à jour d'axios et form-data pour corriger des vulnérabilités critiques",
-        "it": "Sicurezza: aggiornamento di axios e form-data per correggere vulnerabilità critiche",
-        "es": "Seguridad: actualización de axios y form-data para corregir vulnerabilidades críticas",
-        "pl": "Bezpieczeństwo: aktualizacja axios i form-data w celu usunięcia krytycznych luk bezpieczeństwa",
-        "uk": "Безпека: оновлено axios та form-data для усунення критичних вразливостей",
-        "zh-cn": "安全：更新 axios 和 form-data 以修复严重安全漏洞"
       },
       "0.7.4": {
         "en": "Admin UI: add disclaimer note about limited device compatibility",
