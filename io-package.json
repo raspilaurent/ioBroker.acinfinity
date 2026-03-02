@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.9.5",
+    "version": "0.9.6",
     "news": {
+      "0.9.6": {
+        "en": "Docs: README translated to English; German README moved to docs/de/; CI: Node.js 24.x added to test matrix",
+        "de": "Doku: README auf Englisch übersetzt; Deutsche README nach docs/de/ verschoben; CI: Node.js 24.x zur Test-Matrix hinzugefügt",
+        "ru": "Документация: README переведён на английский; немецкий README перемещён в docs/de/; CI: добавлен Node.js 24.x",
+        "pt": "Docs: README traduzido para inglês; README alemão movido para docs/de/; CI: Node.js 24.x adicionado à matriz de testes",
+        "nl": "Docs: README vertaald naar Engels; Duitse README verplaatst naar docs/de/; CI: Node.js 24.x toegevoegd aan testmatrix",
+        "fr": "Docs: README traduit en anglais; README allemand déplacé vers docs/de/; CI: Node.js 24.x ajouté à la matrice de tests",
+        "it": "Docs: README tradotto in inglese; README tedesco spostato in docs/de/; CI: Node.js 24.x aggiunto alla matrice di test",
+        "es": "Docs: README traducido al inglés; README alemán movido a docs/de/; CI: Node.js 24.x añadido a la matriz de pruebas",
+        "pl": "Dokumentacja: README przetłumaczony na angielski; niemiecki README przeniesiony do docs/de/; CI: dodano Node.js 24.x",
+        "uk": "Документація: README перекладено англійською; німецький README переміщено до docs/de/; CI: додано Node.js 24.x",
+        "zh-cn": "文档：README翻译为英文；德文README移至docs/de/；CI：测试矩阵新增Node.js 24.x"
+      },
       "0.9.5": {
         "en": "Fix: LICENSE copyright format (ioBroker checker E7001); CI: drop Node.js 18.x (requires Node >=20)",
         "de": "Fix: LICENSE Copyright-Format korrigiert (E7001); CI: Node.js 18.x entfernt (erfordert Node ≥20)",
@@ -80,19 +93,6 @@
         "pl": "Admin UI: dodano informację o ograniczonej kompatybilności urządzeń",
         "uk": "Admin UI: додано застереження про обмежену сумісність пристроїв",
         "zh-cn": "管理界面：添加关于设备兼容性有限的免责声明"
-      },
-      "0.7.3": {
-        "en": "Admin UI: remove warning box, clean up settings layout, fix help link",
-        "de": "Admin-UI: Warnhinweis entfernt, Einstellungslayout bereinigt, Hilfe-Link korrigiert",
-        "ru": "Admin UI: убран блок предупреждения, улучшен макет настроек, исправлена ссылка на справку",
-        "pt": "Admin UI: caixa de aviso removida, layout de configurações limpo, link de ajuda corrigido",
-        "nl": "Admin UI: waarschuwingsvak verwijderd, instellingen layout verbeterd, helplink gecorrigeerd",
-        "fr": "Admin UI: bloc d'avertissement supprimé, mise en page des paramètres améliorée, lien d'aide corrigé",
-        "it": "Admin UI: riquadro di avviso rimosso, layout impostazioni migliorato, link guida corretto",
-        "es": "Admin UI: cuadro de advertencia eliminado, diseño de configuración mejorado, enlace de ayuda corregido",
-        "pl": "Admin UI: usunięto pole ostrzeżenia, poprawiono układ ustawień, naprawiono link pomocy",
-        "uk": "Admin UI: видалено блок попередження, покращено макет налаштувань, виправлено посилання на довідку",
-        "zh-cn": "管理界面：移除警告框，优化设置布局，修复帮助链接"
       }
     },
     "titleLang": {
