@@ -7,6 +7,9 @@
 
 ioBroker-Adapter zur Überwachung und Steuerung von **AC Infinity UIS WiFi-Controllern**.
 
+AC Infinity stellt smarte Klimasteuerungsgeräte für Growboxen und Gewächshäuser her — Lüfter, Temperatur-/Feuchtigkeitssensoren, Schaltdosen u.v.m.
+Weitere Informationen zu den Geräten: [AC Infinity Website](https://acinfinity.com) und [Controller 69 Pro Produktseite](https://acinfinity.com/climate-controllers/).
+
 > English documentation: [README.md](../../README.md)
 
 ---

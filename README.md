@@ -7,6 +7,9 @@
 
 ioBroker adapter for monitoring and controlling **AC Infinity UIS WiFi controllers**.
 
+AC Infinity manufactures smart climate control devices for grow tents and greenhouses — fans, temperature/humidity sensors, smart outlets and more.
+For device information see the [AC Infinity website](https://acinfinity.com) and the [Controller 69 Pro product page](https://acinfinity.com/climate-controllers/).
+
 > Deutsche Dokumentation: [docs/de/README.md](docs/de/README.md)
 
 ---

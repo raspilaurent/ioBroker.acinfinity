@@ -1,6 +1,7 @@
 {
   "common": {
     "name": "acinfinity",
+    "title": "AC Infinity",
     "version": "0.9.6",
     "news": {
       "0.9.6": {
