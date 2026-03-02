@@ -31,6 +31,7 @@ class ACInfinity extends utils.Adapter {
         this.stateManager = null;
         this.pollingInterval = null;
         this.isConnected = false;
+        this.isLoginInProgress = false;
     }
 
     /**
@@ -108,11 +109,16 @@ class ACInfinity extends utils.Adapter {
                     this.log.error(`Error during polling update: ${error.message}`);
                     if (error.message.includes('unauthorized') || error.message.includes('auth')) {
                         this.log.info('Authentication error detected, attempting to re-login');
-                        try {
-                            await this.client.login();
-                            this.log.info('Re-login successful');
-                        } catch (loginError) {
-                            this.log.error(`Failed to re-login: ${loginError.message}`);
+                        if (!this.isLoginInProgress) {
+                            this.isLoginInProgress = true;
+                            try {
+                                await this.client.login();
+                                this.log.info('Re-login successful');
+                            } catch (loginError) {
+                                this.log.error(`Failed to re-login: ${loginError.message}`);
+                            } finally {
+                                this.isLoginInProgress = false;
+                            }
                         }
                     }
                 }
@@ -296,9 +302,14 @@ class ACInfinity extends utils.Adapter {
                 this.log.info(
                     `Not logged in, trying to log in again. isConnected: ${this.isConnected}, isLoggedIn: ${this.client ? this.client.isLoggedIn() : 'client is null'}`,
                 );
+                if (this.isLoginInProgress) {
+                    this.log.debug('Login already in progress, skipping duplicate re-login');
+                    return;
+                }
+                this.isLoginInProgress = true;
                 try {
                     await this.client.login();
-                    this.log.info(`Re-login successful. Token: ${this.client.token}`);
+                    this.log.info('Re-login successful');
                     this.isConnected = true;
                     await this.setStateAsync('info.connection', { val: true, ack: true });
                 } catch (loginError) {
@@ -306,6 +317,8 @@ class ACInfinity extends utils.Adapter {
                     this.isConnected = false;
                     await this.setStateAsync('info.connection', { val: false, ack: true });
                     throw new Error('Login failed, state change cannot be processed');
+                } finally {
+                    this.isLoginInProgress = false;
                 }
             }
 

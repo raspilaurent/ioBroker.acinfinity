@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.8.5",
+    "version": "0.9.0",
     "news": {
+      "0.9.0": {
+        "en": "Security: token no longer logged; fix re-login race condition; null-safe sensor values; HTTP API documented",
+        "de": "Sicherheit: Token nicht mehr in Logs; Race Condition bei Re-Login behoben; Null-sichere Sensorwerte; HTTP-API dokumentiert",
+        "ru": "Безопасность: токен больше не логируется; исправлена гонка при повторном входе; безопасные сенсорные значения; задокументировано использование HTTP",
+        "pt": "Segurança: token não registrado; correção de condição de corrida no re-login; valores de sensor seguros para null; API HTTP documentada",
+        "nl": "Beveiliging: token niet meer gelogd; race condition bij re-login opgelost; null-veilige sensorwaarden; HTTP API gedocumenteerd",
+        "fr": "Sécurité: token non journalisé; correction de la condition de course à la reconnexion; valeurs capteur sûres pour null; API HTTP documentée",
+        "it": "Sicurezza: token non più registrato; race condition nel re-login corretta; valori sensore sicuri per null; API HTTP documentata",
+        "es": "Seguridad: token ya no registrado; race condition en re-login corregida; valores de sensor seguros para null; API HTTP documentada",
+        "pl": "Bezpieczeństwo: token nie jest już logowany; naprawiono race condition przy ponownym logowaniu; bezpieczne wartości null dla sensorów; API HTTP udokumentowane",
+        "uk": "Безпека: токен більше не логується; виправлено race condition при повторному вході; null-безпечні значення сенсорів; HTTP API задокументовано",
+        "zh-cn": "安全：不再记录令牌；修复重新登录时的竞争条件；传感器值空值安全；HTTP API已记录"
+      },
       "0.8.5": {
         "en": "Admin UI: disclaimer text now red and bold; minimum polling interval increased to 10 seconds",
         "de": "Admin-UI: Hinweistext jetzt rot und fett; minimales Abfrageintervall auf 10 Sekunden erhöht",
@@ -80,19 +93,6 @@
         "pl": "Jakość kodu: migracja do ESLint 9 z @iobroker/eslint-config",
         "uk": "Якість коду: міграція на ESLint 9 з @iobroker/eslint-config",
         "zh-cn": "代码质量：迁移到 ESLint 9 并使用 @iobroker/eslint-config"
-      },
-      "0.7.1": {
-        "en": "Add value ranges to state names for better readability",
-        "de": "Wertebereiche zu Datenpunkt-Namen hinzugefügt für bessere Lesbarkeit",
-        "ru": "Добавлены диапазоны значений к названиям точек данных",
-        "pt": "Intervalos de valores adicionados aos nomes dos pontos de dados",
-        "nl": "Waardebereiken toegevoegd aan namen van datapunten",
-        "fr": "Plages de valeurs ajoutées aux noms des points de données",
-        "it": "Intervalli di valori aggiunti ai nomi dei punti dati",
-        "es": "Rangos de valores añadidos a los nombres de los puntos de datos",
-        "pl": "Dodano zakresy wartości do nazw punktów danych",
-        "uk": "Додано діапазони значень до назв точок даних",
-        "zh-cn": "为数据点名称添加了值范围以提高可读性"
       }
     },
     "titleLang": {

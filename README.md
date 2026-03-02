@@ -205,6 +205,13 @@ Der Adapter erkennt automatisch alle verbundenen Controller und legt den State-B
 
 ## Changelog
 
+### 0.9.0 (2026-03-02)
+- Sicherheit: Auth-Token wird nicht mehr in Logs geschrieben
+- Stabilität: Race Condition bei parallelen Re-Login-Versuchen behoben
+- Robustheit: Null-Prüfung für Sensorwerte (verhindert NaN bei nicht angeschlossenen Sensoren)
+- Dokumentation: HTTP-Nutzung der AC Infinity API im Code kommentiert
+- Hinweis: AC Infinity API unterstützt kein HTTPS (serverseitige Einschränkung)
+
 ### 0.8.5 (2026-03-01)
 - Admin-UI: Hinweistext jetzt rot und fett dargestellt
 - Admin-UI: Minimales Abfrageintervall von 5 auf 10 Sekunden erhöht
