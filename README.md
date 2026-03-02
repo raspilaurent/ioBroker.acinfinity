@@ -205,6 +205,10 @@ Der Adapter erkennt automatisch alle verbundenen Controller und legt den State-B
 
 ## Changelog
 
+### 0.9.5 (2026-03-02)
+- Fix: LICENSE Copyright-Format korrigiert (ioBroker Checker E7001)
+- CI: Node.js 18.x aus Test-Matrix entfernt (Adapter erfordert Node ≥ 20)
+
 ### 0.9.0 (2026-03-02)
 - Sicherheit: Auth-Token wird nicht mehr in Logs geschrieben
 - Stabilität: Race Condition bei parallelen Re-Login-Versuchen behoben

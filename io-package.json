@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "acinfinity",
-    "version": "0.9.0",
+    "version": "0.9.5",
     "news": {
+      "0.9.5": {
+        "en": "Fix: LICENSE copyright format (ioBroker checker E7001); CI: drop Node.js 18.x (requires Node >=20)",
+        "de": "Fix: LICENSE Copyright-Format korrigiert (E7001); CI: Node.js 18.x entfernt (erfordert Node ≥20)",
+        "ru": "Исправление: формат авторских прав в LICENSE (E7001); CI: удалена Node.js 18.x (требуется Node >=20)",
+        "pt": "Fix: formato de copyright do LICENSE corrigido (E7001); CI: Node.js 18.x removido (requer Node >=20)",
+        "nl": "Fix: LICENSE copyright-formaat gecorrigeerd (E7001); CI: Node.js 18.x verwijderd (vereist Node >=20)",
+        "fr": "Fix: format du copyright LICENSE corrigé (E7001); CI: Node.js 18.x supprimé (requiert Node >=20)",
+        "it": "Fix: formato copyright LICENSE corretto (E7001); CI: Node.js 18.x rimosso (richiede Node >=20)",
+        "es": "Fix: formato de copyright de LICENSE corregido (E7001); CI: Node.js 18.x eliminado (requiere Node >=20)",
+        "pl": "Poprawka: format praw autorskich LICENSE (E7001); CI: usunięto Node.js 18.x (wymagane Node >=20)",
+        "uk": "Виправлення: формат авторських прав LICENSE (E7001); CI: видалено Node.js 18.x (потрібно Node >=20)",
+        "zh-cn": "修复：LICENSE版权格式（E7001）；CI：删除Node.js 18.x（需要Node >=20）"
+      },
       "0.9.0": {
         "en": "Security: token no longer logged; fix re-login race condition; null-safe sensor values; HTTP API documented",
         "de": "Sicherheit: Token nicht mehr in Logs; Race Condition bei Re-Login behoben; Null-sichere Sensorwerte; HTTP-API dokumentiert",
@@ -80,19 +93,6 @@
         "pl": "Admin UI: usunięto pole ostrzeżenia, poprawiono układ ustawień, naprawiono link pomocy",
         "uk": "Admin UI: видалено блок попередження, покращено макет налаштувань, виправлено посилання на довідку",
         "zh-cn": "管理界面：移除警告框，优化设置布局，修复帮助链接"
-      },
-      "0.7.2": {
-        "en": "Code quality: migrate to ESLint 9 with @iobroker/eslint-config",
-        "de": "Codequalität: Migration auf ESLint 9 mit @iobroker/eslint-config",
-        "ru": "Качество кода: миграция на ESLint 9 с @iobroker/eslint-config",
-        "pt": "Qualidade do código: migração para ESLint 9 com @iobroker/eslint-config",
-        "nl": "Codekwaliteit: migratie naar ESLint 9 met @iobroker/eslint-config",
-        "fr": "Qualité du code: migration vers ESLint 9 avec @iobroker/eslint-config",
-        "it": "Qualità del codice: migrazione a ESLint 9 con @iobroker/eslint-config",
-        "es": "Calidad del código: migración a ESLint 9 con @iobroker/eslint-config",
-        "pl": "Jakość kodu: migracja do ESLint 9 z @iobroker/eslint-config",
-        "uk": "Якість коду: міграція на ESLint 9 з @iobroker/eslint-config",
-        "zh-cn": "代码质量：迁移到 ESLint 9 并使用 @iobroker/eslint-config"
       }
     },
     "titleLang": {
